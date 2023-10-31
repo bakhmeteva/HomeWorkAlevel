@@ -1,6 +1,6 @@
-package lesson2;
+package ua.bakhmeteva.hw2;
 
-public class TriangleSquare {
+public class Task1 {
     //Заданы плоские декартовы координаты треугольника. Например A(1, 5), B(3, 5), C(6, 7)
     //• Найти площадь треугольника и вывести в консоль.
     public static void main(String[] args) {

@@ -1,6 +1,6 @@
-package lesson2;
+package ua.bakhmeteva.hw2;
 
-public class LessModuleNumber {
+public class Task3 {
     public static void main(String[] args) {
         int n1 = 12;
         int n2 = -7;

@@ -1,6 +1,6 @@
-package lesson2;
+package ua.bakhmeteva.hw2;
 
-public class EvenOrOdd {
+public class Task2 {
 
     public static void main(String[] args) {
         int number = 21;

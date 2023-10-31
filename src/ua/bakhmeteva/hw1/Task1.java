@@ -1,6 +1,6 @@
-package lesson1;
+package ua.bakhmeteva.hw1;
 
-public class StringConcat {
+public class Task1 {
     public static void main(String[] args) {
         String name = "Yulia";
         int height = 170;
