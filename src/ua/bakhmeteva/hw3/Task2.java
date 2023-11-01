@@ -1,20 +1,31 @@
 package ua.bakhmeteva.hw3;
 
-import java.util.Scanner;
-
 public class Task2 {
-    //Вводится строка, состоящая из слов, разделенных пробелами. Требуется посчитать количество слов в ней.
-
+    //Удалить из строки пробелы и определить, является ли она перевертышем (палиндромом)
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Введите строку: ");
-        String inputString = scanner.nextLine();
-        scanner.close();
+        String s1 = "А роза упала на лапу Азора  ";
+        String s2 = "А розd";
 
-        System.out.println("В строке [" + inputString + "] " + getWordsCount(inputString) + " слов(а)");
+        printIsLinePalindrome(s1);
+        printIsLinePalindrome(s2);
     }
 
-    private static int getWordsCount(String line){
-        return line.length() - line.replace(" ", "").length() + 1;
+    private static void printIsLinePalindrome(String line) {
+        if (isPalindrome(line)){
+            System.out.println("Строка [" + line + "] - палиндром");
+        } else {
+            System.out.println("Строка [" + line + "] - НЕ палиндром");
+        }
     }
+
+    private static boolean isPalindrome(String line){
+        String trimmedLine = line.toLowerCase().trim().replaceAll(" ", "");
+        String turnedLine = "";
+        for (int i = 0; i < trimmedLine.length(); i++) {
+            turnedLine = trimmedLine.toCharArray()[i] + turnedLine;
+        }
+        return trimmedLine.equals(turnedLine);
+    }
+
+
 }
