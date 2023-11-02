@@ -15,6 +15,7 @@ public class Task3 {
     }
 
     private static int getWordsCount(String line){
-        return line.length() - line.replace(" ", "").length() + 1;
+        String strippedLine = line.strip();
+        return strippedLine.replaceAll("\\s+", " ").length() - strippedLine.replace(" ", "").length() + 1;
     }
 }
