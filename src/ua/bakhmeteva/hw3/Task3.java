@@ -15,7 +15,9 @@ public class Task3 {
     }
 
     private static int getWordsCount(String line){
-        String strippedLine = line.strip();
-        return strippedLine.replaceAll("\\s+", " ").length() - strippedLine.replace(" ", "").length() + 1;
+        // Убираем пробелы вначале, вконце и обрабатываем множественные пробелы
+        String strippedLine = line.strip().replaceAll("\\s+", " ");
+        //Получаем кол-во строк
+        return strippedLine.length() - strippedLine.replace(" ", "").length() + 1;
     }
 }
