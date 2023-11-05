@@ -7,8 +7,8 @@ public class Task1 {
 
     public static void main(String[] args) {
         ArrayList<Integer> myArray = fillArray(400, 10);
-        System.out.println(findAvgArifm(myArray));
-        System.out.println(findAvgGeometric(myArray));
+        System.out.println("Среднее арифмитическое " + findAvgArifm(myArray));
+        System.out.println("Среднее геометрическое " + findAvgGeometric(myArray));
     }
 
     // заполняем массив случайными числами
@@ -32,7 +32,7 @@ public class Task1 {
         return ((double) summ / myArray.size());
     }
 
-    //находим среднее геомертрическое массива
+    //находим среднее геометрическое массива
     private static double findAvgGeometric(ArrayList<Integer> myArray){
         double composition = 1;
         for (Integer item : myArray) {
