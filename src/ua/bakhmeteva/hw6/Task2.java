@@ -31,7 +31,6 @@ public class Task2 {
             }
         }
 
-        //i max = 5
         for (int i = 0; i < triangle.length; i++) {
             for (int j = 0; j < triangle[i].length; j++) {
                 System.out.print(triangle[i][j] + " ");
