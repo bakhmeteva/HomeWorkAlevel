@@ -1,32 +1,34 @@
 package ua.bakhmeteva.hw4;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Random;
 
 public class Task3 {
     public static void main(String[] args) {
-        ArrayList<Integer> myArray = fillArray(2000, 10);
-        ArrayList<Integer> myArrayWithoutOdd = replaceEvenToZero(myArray);
+        int[] myArray = fillArray(2000, 10);
+        int[] myArrayWithoutOdd = replaceEvenToZero(myArray);
+        System.out.println(Arrays.toString(myArrayWithoutOdd));
     }
 
     // заполняем массив случайными числами
-    private static ArrayList<Integer> fillArray(int size, int maxNumber){
-        ArrayList<Integer> myArray = new ArrayList<Integer>();
+    private static int[] fillArray(int size, int maxNumber){
+        int[] myArray = new int[size];
         Random random = new Random();
         for (int i = 0; i < size; i++) {
-            myArray.add(random.nextInt(maxNumber) + 1);
+            myArray[i] = random.nextInt(maxNumber) + 1;
 
         }
         return myArray;
     }
 
-    private static ArrayList<Integer> replaceEvenToZero(ArrayList<Integer> myArray){
-        ArrayList<Integer> newArray = new ArrayList<Integer>();
-        for (Integer item : myArray) {
-            if (item % 2 == 0) {
-                newArray.add(0);
+    private static int[] replaceEvenToZero(int[] myArray){
+        int[] newArray = new int[myArray.length];;
+        for (int i = 0; i < newArray.length; i++) {
+            if (myArray[i] % 2 == 0) {
+                newArray[i] = 0;
             } else {
-               newArray.add(item);
+                newArray[i] = myArray[i];
             }
         }
         return newArray;

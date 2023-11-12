@@ -5,22 +5,22 @@ import java.util.Random;
 
 public class Task2 {
     public static void main(String[] args) {
-        ArrayList<Integer> myArray = fillArray(1000, 10);
+        int[] myArray = fillArray(1000, 10);
         System.out.println("Количество простых чисел " + getPrimeNumbersAmount(myArray));
     }
 
     // заполняем массив случайными числами
-    private static ArrayList<Integer> fillArray(int size, int maxNumber){
-        ArrayList<Integer> myArray = new ArrayList<Integer>();
+    private static int[] fillArray(int size, int maxNumber){
+        int[] myArray = new int[size];
         Random random = new Random();
         for (int i = 0; i < size; i++) {
-            myArray.add(random.nextInt(maxNumber) + 1);
+            myArray[i] = random.nextInt(maxNumber) + 1;
 
         }
         return myArray;
     }
 
-    private static int getPrimeNumbersAmount (ArrayList<Integer> myArray){
+    private static int getPrimeNumbersAmount (int[] myArray){
         int numbersAmount = 0;
         for (Integer item : myArray) {
             if (isPrime(item)){
