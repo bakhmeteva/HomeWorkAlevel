@@ -1,6 +1,5 @@
 package ua.bakhmeteva.hw4;
 
-import java.util.ArrayList;
 import java.util.Random;
 
 public class Task2 {
@@ -10,7 +9,7 @@ public class Task2 {
     }
 
     // заполняем массив случайными числами
-    private static int[] fillArray(int size, int maxNumber){
+    private static int[] fillArray(int size, int maxNumber) {
         int[] myArray = new int[size];
         Random random = new Random();
         for (int i = 0; i < size; i++) {
@@ -20,10 +19,10 @@ public class Task2 {
         return myArray;
     }
 
-    private static int getPrimeNumbersAmount (int[] myArray){
+    private static int getPrimeNumbersAmount(int[] myArray) {
         int numbersAmount = 0;
         for (Integer item : myArray) {
-            if (isPrime(item)){
+            if (isPrime(item)) {
                 numbersAmount++;
             }
 
