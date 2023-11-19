@@ -1,4 +1,4 @@
-package ua.bakhmeteva.hw8;
+package ua.bakhmeteva.hw8.pow;
 
 public class PowDemo {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package ua.bakhmeteva.hw8;
+package ua.bakhmeteva.hw8.pow;
 
 @FunctionalInterface
 public interface Pow {
