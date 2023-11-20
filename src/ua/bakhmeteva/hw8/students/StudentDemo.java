@@ -5,8 +5,8 @@ public class StudentDemo {
         Student[] students = {
                 new Student("Garry", "Potter", 4.5),
                 new Student("Hermione", "Greindger", 5),
-                new Aspirant("Cedrick", "Digory", 5),
-                new Aspirant("Fred", "Wisley", 3)
+                new Aspirant("Cedrick", "Digory", 5, "Work1"),
+                new Aspirant("Fred", "Wisley", 3, "Work2")
         };
 
         for (Student s: students ) {
