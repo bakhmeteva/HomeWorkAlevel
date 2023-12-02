@@ -1,7 +1,5 @@
 package ua.bakhmeteva.hw6;
 
-import java.util.Objects;
-
 public class Phone {
     int number;
     String model;
