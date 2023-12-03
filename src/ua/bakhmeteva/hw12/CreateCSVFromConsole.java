@@ -8,8 +8,6 @@ public class CreateCSVFromConsole {
     public static void main(String[] args) {
         String fullInput = getFullStringFromKeyboard();
         csvGenerator(fullInput);
-        int a = 1;
-
     }
 
     private static String getFullStringFromKeyboard() {
@@ -24,7 +22,7 @@ public class CreateCSVFromConsole {
                 if (inputString.equalsIgnoreCase("next")) {
                     fullString.append("\n");
                 } else {
-                    fullString.append(inputString).append(" ");
+                    fullString.append(inputString).append(", ");
                 }
             }
         }
