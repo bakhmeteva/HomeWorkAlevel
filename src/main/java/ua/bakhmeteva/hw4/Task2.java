@@ -9,7 +9,7 @@ public class Task2 {
     }
 
     // заполняем массив случайными числами
-    private static int[] fillArray(int size, int maxNumber) {
+    public static int[] fillArray(int size, int maxNumber) {
         int[] myArray = new int[size];
         Random random = new Random();
         for (int i = 0; i < size; i++) {
@@ -32,7 +32,7 @@ public class Task2 {
 
 
     //является ли число простым
-    private static boolean isPrime(int number) {
+    public static boolean isPrime(int number) {
         if (number <= 1) {
             return false; // Числа меньше или равные 1 не являются простыми.
         }
