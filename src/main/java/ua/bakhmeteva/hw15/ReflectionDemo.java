@@ -7,7 +7,7 @@ public class ReflectionDemo {
 
     public static void main(String[] args) throws Exception {
         Class<A> aClass = A.class;
-        // Получаем приватный конструктор класса A
+        //Получаем приватный конструктор класса A
         Constructor<A> constructor = aClass.getDeclaredConstructor();
         // Разрешаем доступ к приватному конструктору
         constructor.setAccessible(true);
